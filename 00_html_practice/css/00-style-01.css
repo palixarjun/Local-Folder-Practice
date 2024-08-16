@@ -1,0 +1,23 @@
+.box {
+    position: absolute;
+    inset: 50px;
+    background-color: #8a2be2;
+    border-radius: 20px;
+    border: 2px solid purple;
+}
+
+body {
+    background-color: #d3aef5 ;
+    text-align: justify;
+}
+
+ul, li {
+    list-style: none;
+    display: inline-block;
+    background-color: #fefefe;
+}
+
+nav {
+    position:fixed;
+    top: 1px;
+}
