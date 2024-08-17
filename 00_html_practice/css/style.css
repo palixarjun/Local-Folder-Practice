@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/00_html_practice/images/img1.jpg);
+    background-size: cover;
+}
+
+.login-container {
+    height: 270px;
+    width: 30%;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 32px;
+}
+
+.form-container {
+    padding: 12px;
+}
+
+label {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+input[type="text"], [type="password"] {
+    width: 80%;
+    padding: 5px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    height: 32px;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+input[type="submit"], [type="reset"] {
+    height: 32px;
+    width: 25%;
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+
+
