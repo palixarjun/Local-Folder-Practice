@@ -10,7 +10,12 @@
     border-radius: 12px;
     min-height: 400px;
     transition: 1s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
-
-
+.heading {
+    font-family: system-ui;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: underline;
+}
