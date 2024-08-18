@@ -1,21 +1,25 @@
 * {
     margin: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 body {
     background-image: url(/00_html_practice/images/img1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .login-container {
     height: 270px;
     width: 30%;
-    position: absolute;
-    margin: auto;
-    inset: 0;
-    background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid white;
     border-radius: 12px;
+    padding: 12px;
+    backdrop-filter:  blur(12px);
 }
 
 .login-text {
@@ -28,6 +32,7 @@ body {
 
 .form-container {
     padding: 12px;
+    position: relative;
 }
 
 label {
@@ -36,23 +41,44 @@ label {
 }
 
 input[type="text"], [type="password"] {
-    width: 80%;
+    width: 100%;
     padding: 5px;
     margin-top: 4px;
     margin-bottom: 8px;
-    height: 32px;
-    border-radius: 4px;
+    height: 36px;
+    border-radius: 16px;
     border: 2px solid white;
+    background-color: transparent;
 }
 
-input[type="submit"], [type="reset"] {
+
+input[type="submit"]{
     height: 32px;
-    width: 25%;
+    width: 100%;
     cursor: pointer;
-    margin: 0 8px;
     border-radius: 4px;
     border: 1px solid white;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 14px;
+    background-color: transparent;
+
 }
+
+.form-container i {
+    position: absolute;
+    right: 32px;
+    top: 29%;
+    transform: translate(50%);
+    font-size: 24px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+
 
 
 
