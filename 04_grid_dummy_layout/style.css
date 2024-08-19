@@ -6,10 +6,10 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
  
-.elements {
+.main .elements {
     border-radius: 12px;
-    min-height: 400px;
-    transition: 1s;
+    min-height: 300px;
+    transition: transform 400ms;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
@@ -19,3 +19,13 @@
     font-weight: 800;
     text-decoration: underline;
 }
+
+  .main .elements:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+/* add hover to main div and the elements that are not hovering must be blurred out */
+  .main:hover > .elements:not(:hover) {
+    filter: blur(8px);
+    transform: scale(0.9);
+  }
