@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blink {
+    font-size: 40px;
+    border-radius: 12px;
+    text-decoration: 2px underline;
+    animation: blink-animation 400ms steps(3, start) infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: .5;
+        color: red;
+        
+
+    }    
+
+    70% {
+        opacity: 0;
+        color: blue;
+    }
+}
+
+
