@@ -1,0 +1,160 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #edf2f4;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    user-select: none; /*the user will not be able to select any text in the container*/
+}
+
+.container .calender {
+    width: 600px;
+    height: 433px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    font-family: sans-serif;
+}
+
+.container .digital-clock {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #ff637d;
+    color: #fff;
+}
+
+.container .digital-clock .time {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.container .digital-clock .time .format {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.calender .month {
+    width: 100%;
+    text-align: center;
+    background-color: #ff637d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.month p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.month .arrow {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ff637d;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 12px 4px;
+    transition: 300ms;
+}
+
+.month .arrow:hover {
+    background-color: rgba(169, 0, 28, 0.7);
+}
+
+.month h2 {
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+.container .week {
+    display: flex;
+    background-color: #ffc6cf;
+}
+
+.container .week div {
+    width: 14.28%;
+    text-align: center;
+    font-size: 18px;
+    padding: 4px 0;
+    color: #000;
+    border: 1px solid white;
+}
+
+.week .active {
+    background-color: red;
+}
+
+.week div:hover {
+    background-color:#000;
+    color: #fff;
+}
+
+.container .dates {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 0;
+    margin-left: 2px;
+}
+
+.dates div {
+    width: 83px;
+    height: 40px;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 1px 1px;
+    border-radius: 4px;
+}
+
+.dates .today {
+    background-color: red;
+    color: white;
+    transition: 400ms;
+}
+
+.dates .today:hover {
+    transform: scale(1.1);
+}
+
+.dates div:hover:not(.today) {
+    background-color: #ff637d;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.dates .prev,
+.dates .next {
+    opacity: 0.5;
+}
+
+.dates .prev:hover,
+.dates .next:hover {
+    opacity: 1;
+}
+
+/* this section is important and useful to hide the overflow content*/
+.calender .dates div:nth-child(n+43) {
+    border: none !important;
+    cursor: auto !important;
+    background: none !important;
+}
