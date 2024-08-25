@@ -77,6 +77,10 @@ body {
     content: "seconds";
 }
 
+.countdown #milisecs::before {
+    content: "m.s.";
+}
+
 .circle {
     height: 400px;
     width: 600px;
@@ -87,22 +91,4 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    transform: 1s;
-    animation: enlarge 1s linear infinite;
-}
-@keyframes enlarge {
-    0% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
-
-    100% {
-        transform: scale(1.5);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
 }
