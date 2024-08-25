@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../19_dynamic_calender/bg-img.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* .container {
+
+} */
+
+.container .heading {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.box-elements {
+    display: flex;
+}
+
+.box-elements .hours,
+.box-elements .minutes,
+.box-elements .seconds {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 12px 9px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid white;
+    outline: none;
+}
+
+#hours, #minutes, #seconds {
+    font-size: 76px;
+    margin-top: 12px;
+}
+
+#format {
+    font-size: 45px;
+    text-align: center;
+}
+.box-elements .text {
+    font-size: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    transform: translate(0, -3px);
+    border-radius: 0 0 12px 12px;
+    border: none;
+    outline: none;
+}
