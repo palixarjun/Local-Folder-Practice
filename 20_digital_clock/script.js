@@ -19,14 +19,9 @@ function updateClock()  {
     hoursEl.innerText = hours;
     minutesEl.innerText = minutes;
     secondsEl.innerText = seconds;
-
-    setTimeout(() => {
-        updateClock();
-    }, 1000);
-
 };
 
-updateClock();
+setInterval(updateClock, 1000);
 
 
 
