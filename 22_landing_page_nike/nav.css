@@ -1,0 +1,42 @@
+.nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.nav-1 {
+    display: flex;
+}
+
+.nav img {
+    height: 40px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 8px 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.nav li:hover {
+    color: #2d6a4f;
+    text-decoration: 1px solid underline;
+}
+
+.nav-2 i {
+    font-size: 24px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.nav-2 i:hover{
+    color: blue;
+}
