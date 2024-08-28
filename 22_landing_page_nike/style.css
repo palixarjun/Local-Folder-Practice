@@ -3,66 +3,111 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body, html {
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    background-color: #d8f3dc;
 }
 
 .main {
     height: 100vh;
     width: 100%;
-    background-color: lightgray;
-}
-.nav-1 {
-    display: flex;
-}
-
-
-.nav {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid white;
-}
-
-
-.nav img {
-    height: 40px;
-    width: auto;
-    margin-left: 20px;
-}
-
-.nav li {
-    display: inline-block;
-    list-style: none;
-    margin: 8px 16px;
-    font-weight: 600;
-    text-transform: capitalize;
-
-}
-
-.nav li:hover {
-    color: white;
-    text-decoration: 1px solid underline;
-}
-
-.nav-2 i {
-    font-size: 24px;
-    margin: 0 12px;
-    cursor: pointer;
-}
-
-.nav-2 i:hover{
-    color: blue;
+    background-color: #b7e4c7;
 }
 
 .content {
     height: calc(100% - 60px);
     width: 100%;
     position: relative;
+    display: flex;  
+}
+
+.content-left {
+    padding: 20px 100px;
+    width: 40%;
+    height: 100%;
+}
+
+.content-right {
+    overflow-x: auto;
+    height: 60%;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+}
+
+.product {
+    height: 350px;
+    width: 200px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    margin: 20px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    /* overflow-x: auto; */
+    background-color: #95d5b2;
+}
+.content-right ::-webkit-scrollbar {
+    display: none;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0px 0px 20px 0;
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    margin: 12px 0px 12px 0px;
+    color: #014629;
+}
+
+.content button {
+    height: 40px;
+    width: 120px;
+    margin-top: 24px;
+    color: #fff;
+    background-color: #081c15;
+    border: none;
+    outline: none;
+    border-radius: 0 40px 40px 45px;
+    text-transform: uppercase;
+}
+
+.content p {
+    line-height: 1.5;
+    color: #004c29;
+}
+
+.content #explore {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+    word-spacing: 12px;
+}
+.title-shoe {
+    padding-left: 12px;
+}
+.product h3 {
+    padding-left: 12px;
+}
+
+#category {
+    padding-left: 12px;
+}
+
+#color {
+    padding-left: 12px;
+    opacity: 0.5;
+}
+
+#price {
+    padding-left: 12px;
+    margin-bottom: 12px;
 }
