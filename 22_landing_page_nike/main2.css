@@ -1,0 +1,83 @@
+.main2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(images/explore-img.jpg);
+    background-size: cover;
+}
+
+.border-container {
+    height: 90vh;
+    width: 90%;
+    border: 3px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0 95px 50px 50px;
+}
+
+.text-container h2 {
+    position: absolute;
+    z-index: 0;
+    color: #fff;
+    top: 10%;
+    text-transform: uppercase;
+    font-size: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-container p {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* main 3 part as well*/
+.main3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 12px;
+    padding-left: 32px;
+}
+
+.container-left-m3 {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.container-left-m3 p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.container-left-m3 li {
+    list-style: none;
+    margin: 4px 0%;
+    color: rgb(155, 155, 155);
+    text-transform: capitalize;
+}
+.container-left-m3 li:hover {
+    text-decoration: 1px solid underline #fff;
+    cursor: pointer;
+}
+
+.container-right-m3 {
+    /* display: flex; */
+    width: 35%;
+    text-align: center;
+    text-decoration: 1px solid underline #fff;
+}
+
+
+

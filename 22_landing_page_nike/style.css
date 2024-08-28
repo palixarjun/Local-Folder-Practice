@@ -3,12 +3,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, html {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     background-color: #d8f3dc;
+    position: relative;
 }
 
 .main {
@@ -35,7 +37,6 @@ body, html {
     height: 60%;
     height: 100%;
     white-space: nowrap;
-    display: flex;
 }
 
 .product {
@@ -46,10 +47,12 @@ body, html {
     margin: 20px 8px;
     border-radius: 12px;
     display: inline-block;
-    /* overflow-x: auto; */
     background-color: #95d5b2;
+    color: #1b4332;
+    /* box-shadow: 2px 2px 10px rgba(0, 87, 39, 1); */
 }
-.content-right ::-webkit-scrollbar {
+
+body ::-webkit-scrollbar {
     display: none;
 }
 
@@ -57,7 +60,7 @@ body, html {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    margin: 0px 0px 20px 0;
+    margin: 0px 0px 12px 0;
     border-radius: 12px 12px 0 0;
     padding: 0;
 }
@@ -80,6 +83,11 @@ body, html {
     text-transform: uppercase;
 }
 
+.content button:hover {
+    text-decoration: 1px solid underline;
+    cursor: pointer;
+}
+
 .content p {
     line-height: 1.5;
     color: #004c29;
@@ -90,9 +98,12 @@ body, html {
     font-size: 12px;
     text-transform: capitalize;
     word-spacing: 12px;
+    text-decoration: 1px solid underline #389368;
 }
 .title-shoe {
     padding-left: 12px;
+    text-transform: capitalize;
+
 }
 .product h3 {
     padding-left: 12px;
@@ -100,14 +111,30 @@ body, html {
 
 #category {
     padding-left: 12px;
+    text-transform: capitalize;
 }
 
 #color {
     padding-left: 12px;
-    opacity: 0.5;
+    opacity: 0.7;
+    font-weight: 500;
+    text-decoration: 1px solid underline;
 }
 
 #price {
     padding-left: 12px;
     margin-bottom: 12px;
+}
+
+.product a {
+    color: #1b4332;
+    text-decoration: none;
+}
+
+.product a:visited {
+    color: #31795b;
+}
+
+.product a:hover {
+    text-decoration: 1px solid underline #358362;
 }
