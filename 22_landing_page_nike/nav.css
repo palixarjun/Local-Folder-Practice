@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #74c69d;
 }
 
 .nav-1 {
@@ -29,6 +29,7 @@
 .nav li:hover {
     color: #2d6a4f;
     text-decoration: 1px solid underline;
+    cursor: pointer;
 }
 
 .nav-2 i {
@@ -40,3 +41,27 @@
 .nav-2 i:hover{
     color: blue;
 }
+
+#top a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 15%;
+}
+
+#top {
+    position: fixed;
+    text-decoration: none;
+    height: 45px;
+    width: 45px;
+    top: 90%;
+    left: 95%;
+    border-radius: 50%;
+    border: none;
+    outline:none;
+    background-color: #000;
+    opacity: 0.7;
+}
+
