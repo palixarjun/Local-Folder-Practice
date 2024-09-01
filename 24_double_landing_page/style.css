@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.split {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 700ms ease-in-out;
+
+}
+
+.split h1 {
+    font-size: 100px;
+    color: #fff;
+}
+
+.split button {
+    height: 60px;
+    width: 150px;
+    margin-top: 16px;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 400ms ease-in;
+}
+
+
+.split.split.left {
+    background-color: #8d99aefa;
+    background-image: url("images/iphone-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.right {
+    background-color: #2b2d42;
+    background-image: url("images/samsung-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left button {
+    border-radius: 0px 30px 30px 30px;
+    color: #fff;
+    background-color: #2b2d42;
+}
+
+.split.right button {
+    border-radius: 30px 0px 30px 30px;
+    color: #fff;
+    background-color: #8d99aefa;
+}
+
+.split button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* this section will work as dynamic section,
+where the width will be adjusted as per active section */
+
+.active-left .left {
+    width: 90%;
+}
+
+.active-left .right {
+    width: 10%;
+}
+
+.active-right .left {
+    width: 10%;
+}
+
+.active-right .right {
+    width: 90%;
+}
