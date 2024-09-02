@@ -1,4 +1,4 @@
-`[preview-gif](preview.gif)`
+`![preview-gif](preview.gif)`
 
 # Maze Game Code Explanation
 
