@@ -29,7 +29,7 @@ body {
     height: 50px;
     margin: 10px;
     position: relative;
-    transition: 700ms ease-in;
+    transition:width 700ms ease-in;
 }
 
 .magnifier {
@@ -38,6 +38,8 @@ body {
 
 .mic-icon {
     right: 20px;
+    transition: width 0.4s;
+    transition-delay: width 1s;
 }
 
 .input {
