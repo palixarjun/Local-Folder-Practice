@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Search Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="active search-bar-container">
+        <img src="google.png" alt="Q" class="magnifier">
+        <input type="text" class="input" placeholder="Search" />
+        <img src="mic.png" alt="Mic" class="mic-icon">
+    </div>
+<!-- Script file is below -->
+    <script>
+        const searchbarEl = document.querySelector(".search-bar-container");
+        const mangnifierEl = document.querySelector(".magnifier");
+
+        mangnifierEl.addEventListener("click", () => {
+            searchbarEl.classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>
