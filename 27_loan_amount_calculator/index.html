@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Principle Amount :</p>
+        <input type="number" id="p-amount"  onchange="calcloan()">
+        <p>Interest (p.a.) :</p>
+        <input type="number" id="interest"  onchange="calcloan()">
+        <p>No of Months :</p>
+        <input type="number" id="month-length" onchange="calcloan()">
+
+        <p>The amount need to be paid is(total): <span id="total">XXX</span></p>
+        <p>The amount need to be paid is(p.m.): <span id="val">XXX</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
