@@ -1,6 +1,6 @@
 ![preview-gif](preview.gif)
 
-#Game Link:
+# Game Link:
 `https://mazegame-palixarjuns-projects.vercel.app/`
 
 # Maze Game Code Explanation
